@@ -415,6 +415,13 @@ section {
   opacity: 0.05;
 }
 
+.about-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .about-image-placeholder .placeholder-text {
   font-size: 0.9rem;
   color: var(--text-secondary);

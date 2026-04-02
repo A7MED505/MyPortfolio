@@ -19,7 +19,7 @@ const categories = [
   },
   {
     title: '🔧 Tools & Others',
-    tags: ['Git & GitHub', 'VS Code', 'Figma', 'Vite', 'npm', 'Linux', 'Docker', 'Firebase'],
+    tags: ['Git & GitHub', 'VS Code', 'Figma', 'Vite', 'npm'],
   },
 ]
 

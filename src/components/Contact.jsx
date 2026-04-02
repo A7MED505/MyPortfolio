@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 const contactMethods = [
-  { icon: '📧', label: 'Email', value: 'ahmed@email.com' },
-  { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/ahmed' },
-  { icon: '🐙', label: 'GitHub', value: 'github.com/ahmed' },
+  { icon: '📧', label: 'Email', value: 'ahmed.mathil82@gmail.com' },
+  { icon: '💼', label: 'LinkedIn', value: 'https://www.linkedin.com/in/ahmed-al-mathil-80a085275/' },
+  { icon: '🐙', label: 'GitHub', value: 'https://github.com/A7MED505' },
   { icon: '📍', label: 'Location', value: 'Saudi Arabia' },
 ]
 

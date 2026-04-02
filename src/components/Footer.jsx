@@ -8,13 +8,13 @@ export default function Footer() {
             © {new Date().getFullYear()} Ahmed. Built with React & ❤️
           </span>
           <div className="footer-socials">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="social-link" aria-label="GitHub">
+            <a href="https://github.com/A7MED505" target="_blank" rel="noreferrer" className="social-link" aria-label="GitHub">
               🐙
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/ahmed-al-mathil-80a085275/" target="_blank" rel="noreferrer" className="social-link" aria-label="LinkedIn">
               💼
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="social-link" aria-label="Twitter">
+            <a href="" target="_blank" rel="noreferrer" className="social-link" aria-label="Twitter">
               🐦
             </a>
           </div>

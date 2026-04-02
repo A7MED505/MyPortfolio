@@ -7,10 +7,14 @@ export default function About() {
         <div className="about-grid">
           <div className="about-image-wrapper">
             <div className="about-image-placeholder">
-              <span>👨‍💻</span>
-              <span className="placeholder-text">// your photo here</span>
+              <img
+                src={import.meta.env.BASE_URL + 'images/MyProfile.jpeg'}
+                alt="Ahmed profile"
+                className="about-profile-image"
+                loading="lazy"
+              />
             </div>
-            <div className="about-tag">3+ Years Exp.</div>
+            <div className="about-tag">2+ Years Exp.</div>
           </div>
 
           <div className="about-text">
@@ -34,7 +38,7 @@ export default function About() {
               </div>
               <div className="about-info-item">
                 <span className="label">📧 Email:</span>
-                <span className="value">ahmed@email.com</span>
+                <span className="value">ahmed.mathil82@gmail.com</span>
               </div>
               <div className="about-info-item">
                 <span className="label">📍 Location:</span>
@@ -42,7 +46,7 @@ export default function About() {
               </div>
               <div className="about-info-item">
                 <span className="label">🎓 Degree:</span>
-                <span className="value">Computer Science</span>
+                <span className="value">Computer Engineering</span>
               </div>
               <div className="about-info-item">
                 <span className="label">💼 Status:</span>
