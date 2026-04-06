@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
+
+// Initialize EmailJS with your Public Key
+emailjs.init('Xq0MzCL3de0gqXfZk')
 
 const contactMethods = [
   { icon: '📧', label: 'Email', value: 'ahmed.mathil82@gmail.com' },
@@ -16,8 +20,27 @@ export default function Contact({ showToast }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    showToast('✅ Message sent! I\'ll get back to you soon.')
-    setForm({ name: '', email: '', subject: '', message: '' })
+    
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      reply_to: form.email,
+      subject: form.subject,
+      message: form.message,
+      email: form.email,
+      to_name: 'Ahmed',
+      to_email: 'ahmed.mathil82@gmail.com',
+    }
+
+    emailjs.send('service_5oii28a', 'template_44f2iqe', templateParams)
+      .then(() => {
+        showToast('✅ Message sent! I\'ll get back to you soon.')
+        setForm({ name: '', email: '', subject: '', message: '' })
+      })
+      .catch((error) => {
+        const reason = error?.text ? ` (${error.text})` : ''
+        showToast(`❌ Error sending message. Please try again.${reason} Check EmailJS template recipient field.`)
+      })
   }
 
   return (
